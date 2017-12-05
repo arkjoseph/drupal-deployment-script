@@ -1,21 +1,8 @@
 #!/bin/bash
-echo Building site with drush make
+say building your site
+cd deploy-site
  
-drush make mymake.make jpg
+drush make drupal-org.make /Users/josephgarrido/Documents/sites/jpg
 
-# message
-echo change directory into root and run drush site install minimal. 
- 
-cd jpg
+drush si site_template --site-name=bootstrap --db-url=mysql://root:root@localhost/drupal-make -y
 
-# message
-echo deploying minimal site... 
-
-drush si minimal --site-name=jpgarrido --db-url=mysql://root:root@localhost/drupal-make -y
-
-drush upwd admin --password="welcome1" -y
-
-# Lets move this to the install profile
-# drush vset theme_default basic 
-
-drush cc all -y
