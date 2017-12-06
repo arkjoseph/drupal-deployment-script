@@ -1,0 +1,51 @@
+; Packaging information for site_template
+name = "Site Template"
+description = "Personal Website"
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Chaos tool suite
+dependencies[] = ctools
+; Core
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = php
+dependencies[] = poll
+dependencies[] = rdf
+dependencies[] = statistics
+dependencies[] = syslog
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = tracker
+dependencies[] = trigger
+dependencies[] = update
+dependencies[] = user
+; Development
+dependencies[] = devel
+dependencies[] = devel_node_access
+dependencies[] = profiler_builder
+; Other
+dependencies[] = token
+; User interface
+dependencies[] = ckeditor
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+
