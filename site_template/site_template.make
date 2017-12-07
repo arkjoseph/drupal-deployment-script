@@ -44,7 +44,6 @@ projects[site_features][type] = "module"
 projects[site_features][download][type] = "git"
 projects[site_features][download][url] = "git@github.com:arkjoseph/custom-features.git"
 
-
 ; CKEditor
 libraries[ckeditor][download][type]= "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.4/ckeditor_3.4.zip"
