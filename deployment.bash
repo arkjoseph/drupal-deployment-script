@@ -23,3 +23,7 @@ drush user-login --uri=http://jpg --redirect-port=8888 -y
 
 
 drush si minimal --site-name=bootstrap --db-url=mysql://jpgio387_1a:Athlon101@localhost/jpgio387_1a -y
+
+#drush rsync --exclude-conf @jpgio.local @jpgio.dev
+#drush @jpgio.dev fua -y
+#drush @jpgio.dev fra -y

@@ -3,7 +3,13 @@ core = "7.x"
 api = "2"
 
 ; Core
+; TODO Can I download core from my own repo?
 projects[drupal][version] = "7.56"
+
+; Git clone of Drupal 7.x. Requires the `core` property to be set to 7.x.
+;projects[drupal][type] = "core"
+;projects[drupal][download][type] = git
+;projects[drupal][download][url] = http://git.drupal.org/project/drupal.git
 
 ; +++++ Modules +++++
 
