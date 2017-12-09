@@ -10,13 +10,16 @@ drush make $script/site_template.make $buildithere
 
 cp -R $script $buildithere/profiles
 cd $buildithere
-
+pwd
 drush si site_template --site-name=bootstrap --db-url=mysql://jpgio387:Athlon101@localhost/jpgio387_1a -y
 drush upwd admin --password="welcome1"
-
+pwd
 cd $buildithere/profiles/site_template/assets
 drush sql-drop -y
 drush sql-cli < $dbname
+
+
+
 #say build complete
 
 #drush user-login --uri=http://jpg --redirect-port=8888 -y

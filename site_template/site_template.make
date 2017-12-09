@@ -4,12 +4,12 @@ api = "2"
 
 ; Core
 ; TODO Can I download core from my own repo?
-projects[drupal][version] = "7.56"
+;projects[drupal][version] = "7.56"
 
 ; Git clone of Drupal 7.x. Requires the `core` property to be set to 7.x.
-;projects[drupal][type] = "core"
-;projects[drupal][download][type] = git
-;projects[drupal][download][url] = http://git.drupal.org/project/drupal.git
+projects[drupal][type] = "core"
+projects[drupal][download][type] = "git"
+projects[drupal][download][url] = "http://github.com/arkjoseph/jpgio.git"
 
 ; +++++ Modules +++++
 
@@ -48,7 +48,7 @@ projects[webform][subdir] = "contrib"
 ;Features
 projects[site_features][type] = "module"
 projects[site_features][download][type] = "git"
-projects[site_features][download][url] = "git@github.com:arkjoseph/custom-features.git"
+projects[site_features][download][url] = "http://github.com/arkjoseph/custom-features.git"
 
 ; CKEditor
 libraries[ckeditor][download][type]= "get"
