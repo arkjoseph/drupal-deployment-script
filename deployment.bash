@@ -1,10 +1,16 @@
 #!/bin/bash
 
-buildithere="/home/jpgio387/public_html/development"
-script="site_template"
+# Create this Directory
+buildithere="/Users/josephgarrido/Documents/sites/jpgio"
+#######
+# Profile and makefile
+script="/Users/josephgarrido/Documents/personal-git/drupal-deployment-script/site_template"
+#######
+# Database
 dbname="jpg-12-6-17.sql"
+#######
 
-#say building your site
+say building your site
 
 drush make $script/site_template.make $buildithere
 
@@ -18,9 +24,10 @@ cd $buildithere/profiles/site_template/assets
 drush sql-drop -y
 drush sql-cli < $dbname
 
+say build complete
 
+# Clone to my own repository
 
-#say build complete
 
 #drush user-login --uri=http://jpg --redirect-port=8888 -y
 #drush make /home/jpgio387/public_html/drupal-deployment-script/site_template/site_template.make /home/jpgio387/public_html/development
