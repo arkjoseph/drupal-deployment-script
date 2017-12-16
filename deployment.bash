@@ -20,6 +20,7 @@ drush sql-cli < $dbname
 # Specific server requirements for application.
 drush vset file_temporary_path /tmp
 drush upwd admin --password="welcome1"
+drush vset theme_debug 0
 
 #say build complete
 

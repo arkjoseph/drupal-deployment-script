@@ -42,8 +42,21 @@ projects[features][subdir] = "contrib"
 projects[media_ckeditor][version] = "2.5"
 projects[media_ckeditor][subdir] = "contrib"
 
+projects[link][version] = "1.4"
+projects[link][subdir] = "contrib"
+
 projects[webform][subdir] = "4.16"
 projects[webform][subdir] = "contrib"
+
+projects[field_group][version] = "1.6"
+projects[field_group][subdir] = "contrib"
+
+projects[field_collection][version] = "1.0-beta12"
+projects[field_collection][subdir] = "contrib"
+
+projects[field_collection_fieldset][version] = "2.6"
+projects[field_collection_fieldset][subdir] = "contrib"
+
 
 ;Features
 projects[site_features][type] = "module"
